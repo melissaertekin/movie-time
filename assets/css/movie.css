@@ -1,0 +1,16 @@
+div{
+    margin: 0;
+}
+
+.movie_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin-left: 0;
+    margin-top: 5%;
+    padding:0;
+}

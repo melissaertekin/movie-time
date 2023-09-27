@@ -1,0 +1,165 @@
+:root{
+    --purple:#9fa0ff;
+    --black:#333;
+    --white:#fff;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--white);
+    padding: 20px;
+}
+
+/* Index */
+
+.movie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.movie>div{
+    width: 100%;
+    max-width: 210px;
+}
+.movie img {
+    width: 100%;
+    max-width: 210px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.movie::after {
+    content: "";
+    max-width: 210px;
+}
+
+
+button{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:1rem 3rem;
+    cursor: pointer;
+    color:var(--white);
+    font-size: .3rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    background-color: var(--purple);
+    text-decoration: none;
+}
+
+button:hover{
+    color: var(--purple);
+    background-color: #dfdfe2;
+}
+button > a , button > a:visited{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/* header starts */
+header, header > a {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background: var(--white);
+    color: var(--purple);
+    border: 4px solid var(--purple);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#home_link{
+    width: 15px;
+    height: 15px;}
+/* header ends */
+
+
+/* navbar starts */
+nav {
+    width: 100%;
+    height: 50px;
+
+}
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #3b3b4f;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+    font-size: 25px;
+}
+
+nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: var(--purple);
+    cursor: pointer;
+}
+
+li > a {
+    color: var(--purple);
+    text-decoration: none;
+}
+/* navbar ends */
+
+/* admin page starts */
+section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    margin-bottom: 50px;
+    font-size: 20px;
+    border-bottom: 3px solid #3b3b4f;
+}
+#user_list{
+    display: block;
+    border: 3px solid var(--purple);
+    height: auto;
+}
+
+section > p{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-inline-start: 0;
+    margin:0 ;
+    border-bottom: 3px solid var(--purple);
+
+}
+/* admin page ends */
