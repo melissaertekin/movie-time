@@ -1,6 +1,8 @@
-# Programmation Web 2
+# Projet de Programmation Web 2 (L2 S4)
 
 ## Information Générales
+>php -S localhost:3000
+
 Vous pouvez vous connecter en tant qu'admin ou utilisateur. 
 
 Pour connexion admin : 
